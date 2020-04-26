@@ -9,18 +9,35 @@
 </head>
 
 <body>
-	<h1>Tasty <a href="https://www.youtube.com/feed/my_videos"> <img src="youtube.png" alt="youtube"></a>
-			<a href="https://www.facebook.com/svitlana.petrytska"> <img src="facebook.png" alt="facebook"></a>
-				<a href="https://www.instagram.com/svitlana.petrytska/?hl=uk">
-					<img src="instagram.png" alt="instagram"></a>
-	</h1>
-	<p>Cooking Blog</p>
-	<img src="img/bread.jpg" alt="bread">
-	<img src="img/keks.jpg" alt="keks"> <br>
-	<video <iframe width="560" height="315" src="Recipes.mp4" controls>></iframe></video>
-	<h2>Popular recipes</h2>
-	<h3>Choco Cake</h3>
-	<p>Recipe:
+	<header>
+
+		<h1>Tasty <a href="https://www.youtube.com/feed/my_videos"> <img src="img/youtube.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/svitlana.petrytska"> <img src="img/facebook.png" alt="facebook"></a>
+					<a href="https://www.instagram.com/svitlana.petrytska/?hl=uk">
+						<img src="img/instagram.png" alt="instagram"></a>
+		</h1>
+		<p> <b> Cooking Blog </b> </p>
+		<form action="" method="POST">
+			<label for="Search">Search:</label><br>
+			<input type="text" id="Search" name="name">
+           </form>
+	
+        	<nav>
+				<a href="form.html">Home page</a>
+			</nav>
+		
+	</header>
+  
+	<main>
+		<img src="img/bread.jpg" alt="bread">
+		<img src="img/keks.jpg" alt="keks"> <br>
+		<p>On our site you will find many delicious and easy recipes. Step by step recipes, video recipes, photo recipes
+			are all here! </p>
+		<video width="560" height="315" src="video/recipes.mp4" controls></video>
+		<h2>Popular recipes</h2>
+		<h3>Choco Cake</h3>
+		<img src="img/cake.jpg" alt="cake">
+		<p>Recipe:</p>
 		<ul>
 			<li>Flour 250 g</li>
 			<li>Butter 60 g</li>
@@ -28,20 +45,67 @@
 			<li>Vanilla extract 2 teaspoons</li>
 			<li>Milk 280 g</li>
 			<li>Wine vinegar 1 tablespoon</li>
-			<p>Mix all dry ingredients, add all wet ingredients, mix ones more. Bake at 175 degrees for 1 hour.</p>
 		</ul>
-		<p>Fondant:</p>
-		<ol>
-			<li>Cocoa 100 g</li>
-			<li>Milk 100 ml (maybe more depends on cocoa)</li>
-			<li>Sugar 35 g</li>
-			<li>Oil 1 teaspoon</li>
+		<details>
+			<summary> Full recipe </summary>
+			<p>Mix all dry ingredients, add all wet ingredients, mix ones more. Bake at 175 degrees for 1 hour.</p>
+
+			<p>Fondant:</p>
+			<ol>
+				<li>Cocoa 100 g</li>
+				<li>Milk 100 ml (maybe more depends on cocoa)</li>
+				<li>Sugar 35 g</li>
+				<li>Oil 1 teaspoon</li>
+			</ol>
 			<p>Mix all ingredients, cook over low heat for 10 minutes. Put on top of the finished cake. Bon appetit!</p>
-	</p>
-	</ol>
-	<img src="img/cake.jpg" alt="cake">
-	<p>Click here to view more <a
-			href="#"><img src="https://www.youtube.com/watch?v=SJ2MlE2AZtI" alt="video recipe of cake"></a>
+		</details>
+		<p>Click here to view more <a href="https://www.youtube.com/watch?v=SJ2MlE2AZtI"> video recipe of cake</a>
+		</p>
+		<h3>Cheese muffines</h3>
+		<img src="img/muffin.jpg" alt="muffines">
+		<table>
+			<tr>
+				<td>Ingredients</td>
+				<td>Amount</td>
+			</tr>
+			<tr>
+				<td>flour</td>
+				<td>290 g</td>
+			</tr>
+			<tr>
+				<td>butter</td>
+				<td>150 g</td>
+			</tr>
+			<tr>
+				<td>sugar</td>
+				<td>250 g</td>
+			</tr>
+			<tr>
+				<td>cheese</td>
+				<td>260 g</td>
+			</tr>
+			<tr>
+				<td>eggs</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>vanilla extract</td>
+				<td>1 teaspoon</td>
+			</tr>
+			<tr>
+				<td>baking powder</td>
+				<td>1 teaspoon</td>
+			</tr>
+		</table>
+		<p>Mix all ingredients. Bake at 175 degrees for 1 hour. Bon appetit!</p>
+	</main>
+    
+	<hr>
+	<footer>
+		<p> 2020 Svitlana Petrytska </p>
+		<p> All rights reserved</p>
+		<p> Contact information: <a href="https://www.facebook.com/svitlana.petrytska"> Contact me</a></p>
+	</footer>
 </body>
 
 </html>
