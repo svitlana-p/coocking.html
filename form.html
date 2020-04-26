@@ -12,55 +12,91 @@
 	<nav>
 		<a href="index.html">Home page</a>
 	</nav>
-	<h1>Test yourself</h1>
-
+	<h1>Enjoy</h1>
 	<form>
-		<p>How much time do you spend cooking?</p>
-		<input type="radio" id="one" name="name" value="one">
-		<label for="one">As little as possible</label><br>
-		<input type="radio" id="two" name="name" value="two">
-		<label for="two">It all depends on the availability of free time</label><br>
-		<input type="radio" id="three" name="name" value="three">
-		<label for="three">I can stay in the kitchen for hours</label>
-	</form>
-	<form>
-		<p>What is the best way to do it if you oversalt the soup?</p>
-		<input type="radio" name="name" value="one">
-		<label for="one">Wrapped in gauze and boil porridge</label><br>
-		<input type="radio"  name="name" value="two">
-		<label for="two">Add some water</label><br>
-		<input type="radio"  name="name" value="three">
-		<label for="three">Add some flour</label>
-	</form>
-	<form>
-		<p> What kind of fruit is pictured below?</p>
-		<img src="img/rambutan.jpg" alt="ranbutan"> <br>
-		<input type="radio"  name="name" value="one">
-		<label for="one">Litchi</label>
-		<input type="radio"  name="name" value="two">
-		<label for="two">Rambutan</label>
-		<input type="radio" name="name" value="three">
-		<label for="three">Dragon fruit</label>
-	</form>
-	<form>
-		<p>What kind of dessert is pictured below?</p>
-		<img src="img/pannacotta.jpg" alt="pannacotta"> <br>
-		<input type="text" name="name">
-	</form>
-		<form action="https://formspree.io/xoqngoly" method="POST">
-			<p><b>Submit test results</b></p>
-			<label for="fname">First name:</label><br>
-			<input type="text" id="fname" name="fname"><br>
-			<label for="lname">Last name:</label><br>
-			<input type="text" id="lname" name="lname">
-			<input type="submit">
+		<p> <b> Choose Your favourite food:</b></p>
+		<p> You can select multiple items</p>
+		<input type="checkbox"
+id="food1" name ="food1" value="cake">
+		<label for="food1"> Choco cake </label> <br>
+		<input type="checkbox"
+id="food2" name ="food2" value="bakery">
+		<label for="food2"> Ciabatta bread </label> <br>
+		<input type="checkbox"
+id="food3" name ="food3" value="burger">
+		<label for="food3"> Hamburger </label> <br>
+		<input type="checkbox"
+id="food4" name ="food4" value="dough">
+		<label for="food4"> Pasta Carbonara </label> <br>
+		<input type="checkbox"
+id="food5" name ="food5" value="salad">
+		<label for="food5"> Greek Salad </label> <br>
 </form>
-			<hr>
-			<footer>
-				<p> 2020 Svitlana Petrytska </p>
-				<p> All rights reserved</p>
-				<p> Contact information: <a href="https://www.facebook.com/svitlana.petrytska"> Contact me</a></p>
-			</footer>
+		<form>
+			<p><b>How much time do You spend cooking?</b></p>
+			<input type="radio" id="one" name="name" value="one">
+			<label for="one">As little as possible</label><br>
+			<input type="radio" id="two" name="name" value="two">
+			<label for="two">It all depends on the availability of free time</label><br>
+			<input type="radio" id="three" name="name" value="three">
+			<label for="three">I can stay in the kitchen for hours</label>
+		</form>
+		<form>
+			<p><b>What is the best way to do it if You oversalt the soup?</b></p>
+			<input type="radio" name="name" value="one">
+			<label for="one">Wrapped in gauze and boil porridge</label><br>
+			<input type="radio"  name="name" value="two">
+			<label for="two">Add some water</label><br>
+			<input type="radio"  name="name" value="three">
+			<label for="three">Add some flour</label>
+		</form>
+		<form>
+			<p><b> What kind of fruit is pictured below?</b></p>
+			<img src="img/rambutan.jpg" alt="ranbutan"> <br>
+			<input type="radio"  name="name" value="one">
+			<label for="one">Litchi</label>
+			<input type="radio"  name="name" value="two">
+			<label for="two">Rambutan</label>
+			<input type="radio" name="name" value="three">
+			<label for="three">Dragon fruit</label>
+		</form>
+		<form>
+			<p><b>What kind of dessert is pictured below?</b></p>
+			<img src="img/pannacotta.jpg" alt="pannacotta"> <br>
+			<input type="text" name="name">
+			<input type="button" onclick="alert('Thank You')" value="Apply">
+	</form>
+			<form>
+				<label for="favcolor"><b>Select your favorite color:</b></label><br>
+				<input type="color" id="favcolor" name="favcolor">
+</form>
+				<form action="https://formspree.io/xoqngoly" method="POST">
+					<p><b>Submit test results</b></p>
+					<label for="fname">First name:</label><br>
+					<input type="text" id="fname" name="fname"><br>
+					<label for="lname">Last name:</label><br>
+					<input type="text" id="lname" name="lname"><br>
+					<label for="birthday">Enter Your birthday date:</label><br>
+					<input type="date" id="birthday" name="birthday"><br>
+					<label for="email">Enter Your email adress:</label><br>
+					<input type="email" id="email" name="email"><br>
+					<label for="myfile">Select a photo of your dish:</label><br>
+					<input type="file" id="myfile" name="myfile">
+					<input type="button" onclick="alert('Thank You')" value="Apply"><br>
+					<label for="phone">Enter your phone number:</label><br>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+					<label for="homepage">Add your homepage:</label><br>
+					<input type="url" id="homepage" name="homepage"><br>
+					<input type="submit">
+					<input type="reset">
+</form>
+					<hr>
+					<footer>
+						<p> 2020 Svitlana Petrytska </p>
+						<p> All rights reserved</p>
+						<p> Contact information: <a href="https://www.facebook.com/svitlana.petrytska"> Contact me</a>
+						</p>
+					</footer>
 </body>
 
 </html>
