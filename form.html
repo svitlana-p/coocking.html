@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form</title>
 </head>
+
 <body>
-    
+	<nav>
+		<a href="index.html">Home page</a>
+	</nav>
+	<h1>Test yourself</h1>
+
+	<form>
+		<p>How much time do you spend cooking?</p>
+		<input type="radio" id="one" name="name" value="one">
+		<label for="one">As little as possible</label><br>
+		<input type="radio" id="two" name="name" value="two">
+		<label for="two">It all depends on the availability of free time</label><br>
+		<input type="radio" id="three" name="name" value="three">
+		<label for="three">I can stay in the kitchen for hours</label>
+	</form>
+	<form>
+		<p>What is the best way to do it if you oversalt the soup?</p>
+		<input type="radio" name="name" value="one">
+		<label for="one">Wrapped in gauze and boil porridge</label><br>
+		<input type="radio"  name="name" value="two">
+		<label for="two">Add some water</label><br>
+		<input type="radio"  name="name" value="three">
+		<label for="three">Add some flour</label>
+	</form>
+	<form>
+		<p> What kind of fruit is pictured below?</p>
+		<img src="img/rambutan.jpg" alt="ranbutan"> <br>
+		<input type="radio"  name="name" value="one">
+		<label for="one">Litchi</label>
+		<input type="radio"  name="name" value="two">
+		<label for="two">Rambutan</label>
+		<input type="radio" name="name" value="three">
+		<label for="three">Dragon fruit</label>
+	</form>
+	<form>
+		<p>What kind of dessert is pictured below?</p>
+		<img src="img/pannacotta.jpg" alt="pannacotta"> <br>
+		<input type="text" name="name">
+	</form>
+		<form action="https://formspree.io/xoqngoly" method="POST">
+			<p><b>Submit test results</b></p>
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname">
+			<input type="submit">
+</form>
+			<hr>
+			<footer>
+				<p> 2020 Svitlana Petrytska </p>
+				<p> All rights reserved</p>
+				<p> Contact information: <a href="https://www.facebook.com/svitlana.petrytska"> Contact me</a></p>
+			</footer>
 </body>
+
 </html>
