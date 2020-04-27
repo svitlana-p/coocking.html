@@ -17,13 +17,14 @@
 						<img src="img/instagram.png" alt="instagram"></a>
 		</h1>
 		<p> <b> Cooking Blog </b> </p>
-		<form >
-			<label for="Search">Search:</label>
-			<input type="text" id="Search" name="name">
-           </form>
+		<form action="/action_page.php">
+			<label for="gsearch">Search:</label>
+			<input type="search" id="gsearch" name="gsearch">
+
+			           </form>
 
 			<nav>
-				<a href="form.html"><b>Test yourself</b></a>
+				<a href="form.html"><h2>Test yourself</h2></a>
 			</nav>
 
 	</header>
@@ -31,8 +32,8 @@
 	<main>
 		<img src="img/bread.jpg" alt="bread">
 		<img src="img/keks.jpg" alt="keks"> <br>
-		<p>On our site you will find many delicious and easy recipes. Step by step recipes, video recipes, photo recipes
-			are all here! </p>
+		<p>On our site you will find many delicious and easy recipes. Step by step recipes, video recipes, photo recipes - 
+			 all are here! </p>
 		<video width="560" height="315" src="video/recipes.mp4" controls></video>
 		<h2>Popular recipes</h2>
 		<h3>Choco Cake</h3>
@@ -98,7 +99,23 @@
 			</tr>
 		</table>
 		<p>Mix all ingredients. Bake at 175 degrees for 1 hour. Bon appetit!</p>
+        <p><b> Listen to the song!</b></p>
+		<audio controls>
+			<source src="audio/okean.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<form action="/action_page.php">
+			<p><b>Feel free to add your comment</b></p><br>
+			<label id="Fname">First Name: </label><br>
+			<input type="text" id="fname" name="username"><br>
+			<label id="Lname">Last Name: </label><br>
+			<input type="text" id="lname" name="username"><br>
+			<p>Enter your comment:</p>
+			<textarea name="comment" cols="40" rows="5"></textarea><br>
+			<input type="submit" value="Submit">
+        </form>
 	</main>
+
 
 	<hr>
 	<footer>
